@@ -1,0 +1,36 @@
+{
+  "best_trial": 2,
+  "mean_validation_accuracy": 0.9558201058201059,
+  "five_hyperparameters": {
+    "lr": 0.000471705203762518,
+    "batch_size": 8,
+    "base_filters": 48,
+    "dropout": 0.13252579649263976,
+    "hidden": 128
+  },
+  "baseline_model_arguments": {
+    "conv_channels": [
+      48,
+      96
+    ],
+    "hidden": 128,
+    "dropout": 0.13252579649263976
+  },
+  "optimizer_arguments": {
+    "lr": 0.000471705203762518
+  },
+  "data_loader_arguments": {
+    "batch_size": 8
+  },
+  "n_trials": 10,
+  "cv_epochs": 30,
+  "n_splits": 5,
+  "elapsed_seconds": 13582.071818299999,
+  "search_space": {
+    "lr": "log-uniform [1e-4, 3e-3]",
+    "batch_size": "[8, 16, 32]",
+    "base_filters": "[16, 32, 48, 64]",
+    "dropout": "uniform [0.1, 0.6]",
+    "hidden": "[64, 128, 256]"
+  }
+}
